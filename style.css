@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* barre menu */
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+.sous-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background:;
+    height: 95px;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    height: 75px;
+    width: 100px;
+    border-radius: 10px;
+    background: none;
+}
+.nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+}
+.btn:hover{
+ border: 4px solid white;
+ background: black;
+ transform: scale(1.2, 1.2);
+}
+.indique{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8px;
+    width: 80px;
+    background: linear-gradient(90deg, chartreuse, teal,blue);
+    border-radius: 20px;
+    opacity: 0;
+    animation: 0.8s infinite indique;
+}
+@keyframes indique{
+    50%{
+        background: linear-gradient(90deg, red, green,yellow);
+    }
+}
+.indique:hover{
+    opacity: 1;
+}
